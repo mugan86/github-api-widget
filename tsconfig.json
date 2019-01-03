@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "github-api-widget": [
+        "dist/github-api-widget"
+      ],
+      "github-api-widget/*": [
+        "dist/github-api-widget/*"
+      ]
+    }
   }
 }

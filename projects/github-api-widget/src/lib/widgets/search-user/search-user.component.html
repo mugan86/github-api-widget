@@ -1,0 +1,7 @@
+
+<input (keydown)="searchUser($event)" [(ngModel)]="search" placeholder="GitHub username">
+
+<github-api-user *ngIf="user"
+    [user]="user"></github-api-user>
+
+<github-api-error *ngIf="error"></github-api-error>
