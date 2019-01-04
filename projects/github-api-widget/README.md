@@ -5,7 +5,8 @@ Show github select user principal info layout
 
 ## Demo
 
-https://mugan86.github.io/github-api-widget/
+[https://mugan86.github.io/github-api-widget/](https://mugan86.github.io/github-api-widget/)
+
 
 ## Screenshots
 
@@ -32,7 +33,7 @@ With default components (use search github user). Add only in desire component.h
 <github-api-search-user></github-api-search-user>
 ```
 
-**If not use search component.**
+#### If not use search component
 
 For example in **app.component.ts** add
 
