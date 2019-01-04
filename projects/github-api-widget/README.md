@@ -58,7 +58,7 @@ this.userSearch.takeApiData('mugan86').then(
 ```
 In html template **(app.component.html)** you must add:
 
-#### Example:
+#### Example
 ```html
 <github-api-user *ngIf="user" [user]="user"></github-api-user>
 ```
