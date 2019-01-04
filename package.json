@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o --port 4600",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build.github.lib": "ng build githubApiWidget && cp -R ./projects/github-api-widget/src/lib/assets ./dist/github-api-widget/lib",
-    "prod": "ng build --prod --base-href='./'"
+    "prod": "ng build --prod --base-href='./' && npm run github.docs.publish",
+    "github.docs.publish": "git status && git add docs/ && git commit -m \"Update demo\" && git push origin master"
   },
   "private": true,
   "dependencies": {
