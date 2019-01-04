@@ -7,7 +7,6 @@
 
 [https://mugan86.github.io/github-api-widget/](https://mugan86.github.io/github-api-widget/)
 
-
 ## Screenshots
 
 ![Select user widget](https://raw.githubusercontent.com/mugan86/github-api-widget/master/screenshots/select-user-widget.png)
