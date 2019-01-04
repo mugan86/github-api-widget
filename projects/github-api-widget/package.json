@@ -1,6 +1,17 @@
 {
   "name": "github-api-widget",
   "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugan86/github-api-widget.git"
+  },
+  "keywords": ["github-api-widget", "api", "github", "gists"],
+  "author": "Anartz Mugika Ledo <mugan86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugan86/github-api-widget/issues"
+  },
+  "homepage": "https://github.com/mugan86/github-api-widget#readme",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
