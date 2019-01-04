@@ -1,6 +1,16 @@
 # Github Api Widget
-
+[![npm version](https://badge.fury.io/js/github-api-widget.svg)](https://badge.fury.io/js/github-api-widget)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Show github select user principal info layout
+
+## Demo
+
+https://mugan86.github.io/github-api-widget/
+
+## Screenshots
+
+![Select user widget](https://raw.githubusercontent.com/mugan86/github-api-widget/master/screenshots/select-user-widget.png)
+![Search User widget](https://raw.githubusercontent.com/mugan86/github-api-widget/master/screenshots/search-user-widget.png)
 
 ## Instructions
 

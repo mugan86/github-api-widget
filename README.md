@@ -1,27 +1,58 @@
-# GithubApiDemo
+# Github Api Widget
+[![npm version](https://badge.fury.io/js/github-api-widget.svg)](https://badge.fury.io/js/github-api-widget)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Show github select user principal info layout
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+## Demo
 
-## Development server
+https://mugan86.github.io/github-api-widget/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Screenshots
 
-## Code scaffolding
+![Select user widget](https://raw.githubusercontent.com/mugan86/github-api-widget/master/screenshots/select-user-widget.png)
+![Search User widget](https://raw.githubusercontent.com/mugan86/github-api-widget/master/screenshots/search-user-widget.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instructions
 
-## Build
+### Install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```npm install github-api-widget```
 
-## Running unit tests
+### Add css style
+In src/styles.css
+```@import "./../node_modules/github-api-widget/lib/assets/styles/styles.css";```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Use in Angular
 
-## Running end-to-end tests
+With default components (use search github user). Add only in desire component.html this tags
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```<github-api-search-user></github-api-search-user>```
 
-## Further help
+**If not use search component.**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For example in **app.component.ts** add
+
+#### Properties
+```
+user: User = null;
+error: boolean;
+```
+
+#### Inject SearchService
+```
+constructor(private userSearch: SearchUserService) { }
+```
+
+#### Take data from API Github with select user (for example 'mugan86')
+```
+this.userSearch.takeApiData('mugan86').then(
+      data => {
+        this.user = data;
+      }
+);
+```
+In html template **(app.component.html)** you must add:
+
+### Example:
+```<github-api-user *ngIf="user"
+    [user]="user"></github-api-user>```
