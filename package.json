@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "build.github.lib": "ng build githubApiWidget && cp -R ./projects/github-api-widget/src/lib/assets ./dist/github-api-widget/lib",
     "prod": "ng build --prod --base-href='./' && npm run github.docs.publish",
-    "github.docs.publish": "git status && git add docs/ && git commit -m \"Update demo\" && git push origin master"
+    "github.docs.publish": "git status && git add docs/ && git commit -m \"Update demo\" && git push origin master",
+    "test.lib": "npm test githubApiWidget"
   },
   "private": true,
   "dependencies": {
