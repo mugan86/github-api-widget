@@ -94,7 +94,7 @@ User component styles
 }
 
 .user-card .header {
-    background-image: url('http://www.brynacorcoran.com/wp-content/uploads/2016/09/Githubfeature.jpg');
+    background-image: url('../img/bg/github-logo-1.jpg');
 }
 
 .user-card .user {
@@ -124,5 +124,5 @@ User component styles
 }
 
 .user-card .status li {
-    width: 33%;
+    width: 25%;
 }
