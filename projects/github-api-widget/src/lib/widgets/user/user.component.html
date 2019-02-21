@@ -18,6 +18,11 @@
           </a>
       </li>
       <li>
+        <a [href]="'https://github.com/'+user.login+'/following'">
+            <strong>{{user.following}}</strong>Following
+          </a>
+      </li>
+      <li>
         <a [href]="'https://github.com/'+user.login+'/followers'">
             <strong>{{user.followers}}</strong>Followers
           </a>
